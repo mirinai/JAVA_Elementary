@@ -1,0 +1,54 @@
+package ex3_operator;
+
+public class Ex3_Operator {
+	public static void main(String[] args) {
+		
+		//증감연산자
+		//1씩 증가 시키커나 1씩 감소시키는 연산자
+		//++,--
+		
+		//a+=1, a-=1
+		
+		//선행증감
+		//변수의 앞에서 씀
+		int a = 10;
+		System.out.println("a : "+ ++a);
+		System.out.println("a : "+a);
+		
+		//후행증감(외상)
+		//변수의 뒤에서 씀
+		int b =10;
+		System.out.println("b : "+ b++);
+		
+		System.out.println("b : "+b);
+		
+		int c=5;
+		int d;
+		d=c++;//c(+1)
+		System.out.println("c : "+c);//c : 6(대입은 이미 했으므로 c=c+1)
+		System.out.println("d : "+d);//d : 5(대입만 했기 때문에)
+		
+		System.out.println("--------------------------------");
+		//------------------------------------------------------
+		//삼항연산자
+		//하나의 조건을 정의해서 조건식이 참일 때 리턴할 값
+		//조건식이 거짓일 때 리턴할 값을 얻어내는 연산자
+		
+		//조건식 ? 조건식이 참일때 리턴할 값 : 조건식이 거짓일 때 리턴할 값;
+		
+		int n1=10;
+		int n2=15;
+		
+		boolean result= ++n1 >= n2 ? true : false;
+		
+	
+		System.out.println("result : "+result);//result : true
+		
+		char result2 = (n1+=n1) == n2 ? 'O':'X';
+		
+		System.out.println("result2 : "+result2);//result2 : X
+		
+		
+	}
+
+}
