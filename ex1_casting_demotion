@@ -1,0 +1,38 @@
+package ex1_casting;
+
+public class Demotion {
+	public static void main(String[] args) {
+		//Demotion(강제형변환)
+		//큰컵의 물을 작은 컵에 옮겨담는 것과 같다.
+		//큰 컵에 있는 물의 양에 따라서 보존될수도 있지만 넘칠수도 있다.
+		//큰 자료형에서 작은 자료형으로 옮길때 데이터의 손실이 일어날수도 있다.
+		
+		//(데이터 타입) 데이터 or 변수
+		
+		char c='B';//2byte
+		int n=68;//4byte
+		
+		c=(char)n;
+		System.out.println("c의 값 : "+c);//결과 : c의 값 : D 아스키코드로 숫자에 맞은 character가 튀어나옴
+		
+		float f = 5.5f;//4byte
+		int n1=0;//4byte
+		
+		//크기가 같아도 자료형이 다르면 강제형변환을 해야함
+		n1=(int)f;
+		System.out.println("n1의 값 : "+n1);//결과 : n1의 값 : 5
+		//float에서 int로 casting되면서 소수점 이하는 사라진다.
+		
+		//자바의 특징
+		//127
+		byte b1 =100;
+		byte b2 =20;
+		//b1+b2->int
+		byte b3= (byte)(b1+b2);
+		int b4 = b1+b2;
+		
+		
+		
+	}
+
+}
