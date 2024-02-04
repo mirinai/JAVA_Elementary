@@ -1,0 +1,51 @@
+public class Ex1_DataType {
+	public static void main(String[] args) {
+		
+		/*
+		 * DataType(자료형)
+		 * 자바가 처리할 수 있는 데이터의 종류
+		 * 
+		 * 기본 자료형
+		 * 실제 데이터값을 저장할 수 있게 해줌
+		 * 
+		 * 자료형 	키워드 	메모리크기 	표현범위
+		 * 논리형 	boolean	1bit 	True, False
+		 * 
+		 * 문자형 	char	2byte	
+		 * 
+		 * 정수형		byte	1byte	-128 ~ 127
+		 * 			short	2byte	-32,768 ~ 32,767
+		 * 			int		4byte	-21,4748,3648 ~ 21,4748,3647
+		 * 			long	8byte	-900경 ~ 900경
+		 * 
+		 * 실수형		float	4byte
+		 * 			double	8byte\
+		 * 
+		 * 참조자료형
+		 * 하나의 기본 자료형으로 표현할수 없는 것들을 표현할 때 쓰는 자료형
+		 * 개발자가 직접 넣어서 쓸수도 있기 때문에 개수가 안 정해짐
+		 * 대표적으로 String이라는 문자열을 저장할수 있는 참조자료형
+		 * char는 문자 하나 저장하는 자료형, String은 문자들의 나열된 집합
+		 * 
+		 * 
+		 */
+
+		System.out.println(100);
+		System.out.println(100+50);
+		//문자열 뒤의 숫자는 연결이 된다.
+		System.out.println("hello"+10);//연결 (hello10)
+		System.out.println(5+10+":"+5+10);//"15:"+5+10
+										  //"15:5"+10
+										  //15:510
+		//먼저 계산하려고 하는 식은 소괄호로 묶는다.
+		System.out.println("2 + 2 = " + (2 + 2));//2 + 2 = 4 
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
