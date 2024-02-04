@@ -1,0 +1,113 @@
+package ex2_switch;
+
+import java.util.Scanner;
+
+public class Ex4_switch {
+	public static void main(String[] args) {
+		/*키보드에서 정수를 입력받아
+		 * month라는 정수형 변수에 대입
+		 * 
+		 * 해당 달이 몇일까지 있는지 코드를 쓰기
+		 * 
+		 * ex)달 입력 : 3
+		 * 3월은 31일까지 있습니다.
+		 * 
+		 */
+		Scanner sc = new Scanner(System.in) ;
+		System.out.print("달 입력 : ");
+		int month=sc.nextInt();
+		
+		switch (month) {
+		/*case 1:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 2:
+			System.out.println(month+"월은 29일까지 있음");
+			break;
+		case 3:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 4:
+			System.out.println(month+"월은 30일까지 있음");
+			break;
+		case 5:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 6:
+			System.out.println(month+"월은 30일까지 있음");
+			break;
+		case 7:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 8:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 9:
+			System.out.println(month+"월은 30일까지 있음");
+			break;
+		case 10:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 11:
+			System.out.println(month+"월은 30일까지 있음");
+			break;
+		case 12:
+			System.out.println(month+"월은 31일까지 있음");
+			break;*/
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println(month+"월은 31일까지 있음");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println(month+"월은 30일까지 있음");
+			break;
+		default:
+			System.out.println(month+"월은 29일까지 있음");
+			break;
+		}
+		
+		System.out.println("----------------------------------");
+		
+		//두개의 정수형 변수를 초기화(값은 자유)
+		//연산자기호를 담아줄 문자열 변수를 초기화
+		//+,-,*,/
+		//switch문을 써서 연산을 하는 코드 만들기
+		
+		//예)출력
+		//10*7=70\
+		
+		int n1=10;
+		int n2=7;
+		
+		String c="*";
+		
+		switch (c) {
+		case "+":
+			System.out.printf("%d + %d = %d",n1,n2,n1 + n2);
+			break;
+		case "-":
+			System.out.printf("%d - %d = %d",n1,n2,n1 - n2);
+			break;
+			
+		case "*":
+			System.out.printf("%d * %d = %d",n1,n2,n1 * n2);
+			break;
+		case "/":
+			System.out.printf("%d / %d = %d",n1,n2,n1 / n2);
+			break;
+		}
+		
+		
+		
+		
+	}
+
+}
