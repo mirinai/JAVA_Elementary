@@ -1,0 +1,42 @@
+package ex4_while;
+//먼저 처리 나중 비교
+//조건에 맞지 않아도 무조건 한번은 실행한다.
+//제어문 가운데 유일하게 세미콜론을 붙이는 문법
+public class Ex2_do_while {
+	public static void main(String[] args) {
+		
+		//기본꼴
+		//do{
+		//
+		//}while(조건식);
+		
+		
+		int i=11;
+		
+		do {
+			
+			System.out.println(i);
+			
+		}while(i<=10);
+		int sum=0;
+		int n=1;
+		
+		do {
+			System.out.println(n);
+			sum+=n;
+			n++;
+		}while(n<=10);
+		//상황에 따라서 반복문 쓰기
+		//반복횟수가 지정되는 경우 -> 횟수를 만족할때까지 반복
+		//ex) 물통에 물을 10번 채워라 -> for문
+		
+		//특정 조건이 주어지는 경우 -> 조건을 만족할때까지 반복
+		//ex) 물통에 물이 가득찰때끼지 채워라 -> while문
+		
+		//특정 조건과 옵션이 주어지는 경우 -> 한번 실행한 뒤에 되풀이 할지 판단
+		//ex) 물통에 물을 따라보고 새지 않으면 끝까지 채워라 ->do-while문
+		
+		
+		
+	}
+}
