@@ -1,0 +1,31 @@
+package ex2_switch;
+
+public class Ex2_switch {
+	public static void main(String[] args) {
+		//switch의 비교값으로 사용가능한 자료형
+		//1)정수(byte,short,int)
+		//2)문자형(char)
+		//3)문자열(String)
+				
+		String str = "홍";
+		String result;
+		
+		
+		switch(str) {
+			case "박":
+				result="박길동";
+				break;
+			case "홍":
+				result="홍길동";
+				break;
+			default:
+				result="일치아님";
+				break;
+		}
+	System.out.println(result);
+	
+	
+	}
+		
+
+}
