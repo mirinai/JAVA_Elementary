@@ -1,0 +1,50 @@
+package ex5_break;
+//기타 제어문
+//일반적으로 조건식의 검사를 거쳐서 반복문에 오면
+//다음 조건식을 검사하기 전까지 반복문 안에 있는 모든 명령을 실행
+
+//기타 제어문의 종류
+//break
+//continue
+
+
+//기타 제어문의 특징
+//break나 continue밑에는 어떠한 코드도 올 수 없다.
+public class Ex1_break {
+	public static void main(String[] args) {
+		//break
+		//반복문 안에서 break를 만나게 되면 가장 가까운 반복문을 끝내고
+		//다음 코드를 실행
+		
+		for (int i=1;i<=2;i++) {
+			
+			for(int j=1;j<=5;j++) {
+				if (j%2==0) {
+					break;
+					
+				}
+				System.out.println(j+" ");
+			}
+			
+			System.out.println();
+			
+		}
+		
+		//while문과 break
+		
+		int n=1;
+		while(true) {
+			System.out.println(n);
+			n++;
+			//n이 10보다 클때 반복문을 빠져나오게 만듦
+			if (n>10) {
+				break;
+			}
+		}
+		
+		
+		
+		
+	}
+
+}
