@@ -1,0 +1,80 @@
+package ex1_if;
+
+import java.util.Scanner;
+
+public class Ex2_if_else {
+	public static void main(String[] args) {
+		//if(조건식){
+		/*
+		 *	조건식이 참일 때 할 명령
+		 * }
+		 * else{
+		 * 	조건식이 거짓일 때 실행할 명령
+		 * 
+		 * }
+		 */
+		int num=5;
+		
+		if (num>4) {
+			System.out.println(num+"은 4보다 크다");
+		}
+		else {
+			System.out.println(num+"은 4보다 작다");
+		
+		
+		}
+		int a=4,b=10;
+		if (a>b) {
+			System.out.println("a가 b보다 크다");
+		}
+		else {
+			System.out.println("a가 b보다 작다");
+		}
+		
+		System.out.println("----------------------------");
+		//---------------------------------------------------
+		//x개의 농구공을 담기 위한 박스의 개수 구하기
+		//키보드에서 값을 입력받아 ball 변수에 저장하기
+		//입력받은 공의 개수에 따라 보관에 필요한 박스의 개수 구하기
+		
+		Scanner sc=new Scanner(System.in);
+		
+		/*System.out.print("농구공의 개수 입력 : ");
+		int x=sc.nextInt();
+		System.out.print("박스의 개수 입력 : ");
+		int box=sc.nextInt();
+		System.out.print("박스에 담는 공 개수 : ");
+		int ball=sc.nextInt();
+		int ne_box=0;
+		
+		if (box*ball<x) {
+			System.out.println("필요한 박스보다 많음");
+		}
+		else {
+			if (x%ball==0) {
+				ne_box=x/ball;
+			}
+			else {
+				ne_box=x/ball+1;
+		}
+			System.out.printf("필요한 박스 : %d",ne_box);
+
+		}*/
+		System.out.print("공의 개수 : ");
+		int ball=sc.nextInt();
+		
+		int box=0;
+		
+		if (ball%5==0) {
+			box=ball/5;
+			
+		
+		}
+		else {
+			box=ball/5+1;
+		}
+		System.out.println("필요한 박스 : "+box);
+
+	}
+
+}
