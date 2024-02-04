@@ -1,0 +1,17 @@
+public class Ex1_print {
+	public static void main(String[] args) {
+		
+		//데이터의 출력
+		//System.out.print() : 안 내용 출력
+		//System.out.println() : '' 줄 바꿈
+		//System.out.println("sadf");
+		/*System.out.print("Welcome");
+		System.out.print("Java World");*/
+		System.out.println("Welcome");
+		System.out.println("Java World");
+		
+		
+		
+		
+	}
+}
