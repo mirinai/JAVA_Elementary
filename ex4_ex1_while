@@ -1,0 +1,39 @@
+package ex4_while;
+
+import java.util.Scanner;
+
+//while문
+//간편한 구성을 가진 반복문(선비교 나중에 처리)
+//반복 횟수가 정해져있지 않고, 조건식이 true면 이어서 되풀이
+//for문보다 구조가 간단, 무한루프에 빠지기 쉬움
+
+public class Ex1_while {
+	public static void main(String[] args) {
+		//기본형
+		//while(조건식){
+		//	조건식이 참이면 되풀이할 명령
+		//}
+		//
+		//while문은 for문처럼 시작값과 증감값을 가지고 있지 않기 때문에 시작값과 증감값을 따로 만듦
+		int num=1;//초기식
+		
+		while (num<=10) {
+			System.out.println(num);
+			num++;//증감식
+			
+		}
+		//내가 몇번 되풀이 하는지 모를 때 
+		Scanner sc=new Scanner(System.in);
+		
+		int n=sc.nextInt();
+		
+		while(n!=0) {
+			System.out.printf("%d의 값",n);
+			n=sc.nextInt();
+			
+		}
+		
+		
+	}
+
+}
