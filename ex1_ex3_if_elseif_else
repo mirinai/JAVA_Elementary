@@ -1,0 +1,96 @@
+package ex1_if;
+
+import java.util.Scanner;
+
+public class Ex3_if_elseif_else {
+	public static void main(String[] args) {
+		//if-elseif
+		/*
+		 * 견줘야할 조건이 여러가지가 있는 경우 쓰는 문법
+		 * 코드를 심플하게 하고 가독성을 높이기 위한 방법으로 if-elseif문을 구현
+		 * 
+		 * if(조건식1){
+		 * 조건식1이 참일때 할 명령
+		 * 
+		 * }
+		 * else if (조건식2){
+		 * 조건식 1이 거짓이고 조건식2가 참일때 할 명령
+		 * 
+		 * }
+		 * else if (조건식3){
+		 * 조건식 1,2가 거짓이고 조건식3이 참일때 할 명령
+		 * }
+		 * else{
+		 * 위의 어떠한 조건식도 같이 않을때 할 명령
+		 * }
+		 * 마지막 else문을 생략이 가능
+		 * 
+		 * 
+		 * 
+		 */
+		int fav=7;
+		
+		if (fav<5) {
+			System.out.println("좋아하는 숫자가 5보다 작음");
+
+		}
+		else if (fav>5) {
+			System.out.println("좋아하는 숫자가 5보다 큼");
+			
+			
+		}
+		else {
+			System.out.println("좋아하는 숫자가 5");
+		}
+		/*
+		 * else if에 있는 조건문이 더 정확함에도 불구하고 if문에 있는 조건식이
+		 * 참이기 때문에 else if는 실행되지 않고 빠져나감
+		 * 보다 효율적인 흐름으로 제어하기 위해 if문과 else if문의 조건문의 위치를 바꿔야한다.
+		 */
+		if (fav>5) {
+			System.out.println("좋아하는 숫자는 5보다 큽니다.");
+			//else if (fav==7) {
+				//System.out.println("좋아하는 숫자는 7입니다.");
+			//}
+		}
+		Scanner sc=new Scanner(System.in);
+		int age=sc.nextInt();
+		
+		System.out.print("나이를 입력 : ");
+		if (age>19) {
+			System.out.println("어른");
+			
+		}
+		else if (age>13) {
+			System.out.println("청소년");
+		
+		}
+		else if (age>6) {
+			System.out.println("어린이");
+			
+		}
+		else {
+			System.out.println("아기");
+		}
+		
+		
+		int score=75;
+		if (score>=90) {
+			System.out.println("성적은 A입니다.");
+		
+		}
+		else if (score>=80) {
+			System.out.println("성적은 B입니다.");
+		}
+		else if (score>=70) {
+			System.out.println("성적은 C입니다.");
+		}
+		else if (score>=60) {
+			System.out.println("성적은 D입니다.");
+		}
+		else {
+			System.out.println("성적은 F입니다.");
+		}
+		
+	}
+}
