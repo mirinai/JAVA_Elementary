@@ -1,0 +1,113 @@
+package ex3_operator;
+
+public class Ex2_Operator {
+	public static void main(String[] args) {
+		
+	
+	//관계연산자
+	//두개의 변수나 상수의 값을 비교하여 참과 거짓을 판단하는 연산자
+	//결과가 항상 논리형으로 반환받는다.
+	//>, <, >=, <=, ==(같음), !=
+	int x=10;
+	int y=20;
+	boolean result;//논리형 데이터만 담을 수 있는 논리형 타입의 변수
+	
+	result=x < y;
+	
+	System.out.println("x < y : " +result);
+	
+	result=x==y;
+	
+	System.out.println("x == y : " +result);
+	
+	result=x!=y;
+	System.out.println("x!=y : "+result);
+	
+	System.out.println("----------------------------------");
+	//---------------------------------------------------------
+	//논리연산자
+	//피연산자를 두개 필요로 하는 이항연산자
+	//피연산자로 논리형 데이터만 사용이 가능하다.
+	
+	//&&, ||, !
+	
+	//A&&B
+	//And 의 의미를 가짐
+	//앞뒤가 모두 true여야만 결과로 true를 반환
+	
+	int myAge=30;
+	int limit=35;
+	
+	result=(limit-5)>=5 && myAge>30;
+	System.out.println("&&연산결과 : "+result);
+	
+	//T&&T -> T
+	//T&&F ->F
+	//F&&T ->F
+	//F&&F ->F
+	
+	//||는 OR의 의미를 가짐
+	//앞 뒤 가운데 하나만 True여도 True를 리턴
+	
+	int n1=10;
+	int n2=20;
+	result = (n1+=10)>20 || n2-10==11;
+	System.out.println("||연산결과 : "+result);
+	
+	//T || T -> T
+	//T || T -> T
+	//F || T -> T
+	//F || F -> F
+	
+	//!
+	//not의 뜻을 가짐
+	//True를 False로, False를 True로 바꿔줌
+	//!논리형데이터, !변수
+	
+	System.out.println("!연산결과 : "+!result);
+	
+	System.out.println("---------------------------");
+	//-----------------------------------------------------
+	//비트연산자
+	//논리연산자와 기능은 비슷하나 bit단위(이진수)의 연산만 할수있음
+	//1->True,0->False
+	//& : 논리곱(AND) : 두 항이 모두 참이면 true
+	//| : 논리합(OR)  : 둘 가운데 하나라도 참이면 true
+	//^ : 배타적논리합(XOR) : 두항이 다르면 true
+	//~ : 부정(not)   : 참을 거짓으로, 거짓을 참으로
+	
+	int a=10; //1010
+	int b=7; //0111
+	int c;
+	
+	c=a&b;
+	System.out.println("c : "+c);//2
+	c=a|b;
+	System.out.println("c : "+c);//8+4+2+1
+	
+	c=a^b;
+	System.out.println("c : "+c);//8+4+1
+	
+	
+	//~연산
+	//2진수로는 음수를 표현할수가 없다.
+	//비트의 맨 앞자리는 수의 표현이 아닌 부호의 표현으로 쓰기로 약속
+	//8bit ->1byte
+	//int 4byte ->32bit
+	
+	System.out.println("~b : "+ ~b);//-8
+	
+	//-(값+1)==
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+
+}
